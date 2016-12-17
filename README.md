@@ -27,7 +27,20 @@ $ yarn add get-them-args
 ```
 
 ## Usage
-To use, provide arguments as argument:smirk:. For example, if the arguments provided are `--hello world --parse=all --no-drugs --make-friends -n 4 -t 5`, the function will return:
+To use, provide arguments as argument :smirk:.
+
+```js
+const getThemArgs = require('get-them-arg')
+const arguments = process.argv.slice(2) // Array of arguments to process
+const options = {} // Options to be passed. CURRENTLY NONE AVAILABLE
+
+// $ node ./example.js --dir . --command foo
+console.log(getThemArgs(process.argv.slice(2)))
+// Will print out: { unknown: [], dir: '.', command: 'foo' }
+```
+
+For example, if the arguments provided are `--hello world --parse=all --no-drugs --make-friends -n 4 -t 5`, the function will return:
+
 ```js
 { unknown: [],
   hello: 'world',
@@ -39,17 +52,19 @@ To use, provide arguments as argument:smirk:. For example, if the arguments prov
 }
 
 ```
-All unparsed arguments will end up in the `unknown` array.
 
-```js
-const getThemArgs = require('get-them-arg')
-const arguments = process.argv.slice(2) // Array of arguments to process
-const options = {} // Options to be passed. CURRENTLY NONE AVAILABLE
+All unparsed arguments will end up in the `unknown` array. The following types of arguments are supported:
 
-// $ node ./example.js --dir . --command foo
-console.log(getThemArgs(process.argv.slice(2)))
-// Will print out: { unknown: [], dir: '.', command: 'foo' }
+```sh
+--key=value
+--key value
+--key # true
+--no-key # false
+-key=value
+-key value
 ```
+
+
 
 ## API
 
