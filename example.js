@@ -1,2 +1,2 @@
-// Run $ node ./example.js {ALL YA ARGS HERE}
+// Run $ node ./example.js {ALL ARGS HERE}
 console.log(require('./index')(process.argv.slice(2)))
