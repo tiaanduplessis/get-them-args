@@ -1,6 +1,6 @@
 {
   "name": "get-them-args",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse argument options with ease",
   "license": "MIT",
   "repository": {
@@ -14,9 +14,8 @@
     "email": "tiaanduplessis@hotmail.com",
     "url": "tiaanduplessis.co.za"
   },
-  
   "scripts": {
-  	"lint": "standard --verbose | snazzy",
+    "lint": "standard --verbose | snazzy",
     "lint:fix": "standard --fix --verbose | snazzy",
     "test": "standard && mocha",
     "watch": "chokidar '**/*' -c 'npm test'"
@@ -25,9 +24,9 @@
     "index.js"
   ],
   "keywords": [
-  "args",
-  "get-them-args",
-  "parser"
+    "args",
+    "get-them-args",
+    "parser"
   ],
   "dependencies": {},
   "devDependencies": {
