@@ -1,20 +1,34 @@
-# get-them-args
-[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-[![Build Status](https://travis-ci.org/tiaanduplessis/get-them-args.svg?branch=master)](https://travis-ci.org/tiaanduplessis/get-them-args)
-[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+<div align="center">
+  <img align="center" src="media/banner.png" alt="get-them-args">
+  <br>
+  <strong>Parse argument options with ease</strong>
+  <br>
+  <div align="center">
+    <a href="https://github.com/feross/standard">
+      <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square" alt="Standard" />
+    </a>
+    <a href="https://travis-ci.org/tiaanduplessis/get-them-args">
+      <img src="https://img.shields.io/travis/tiaanduplessis/get-them-args/master.svg?style=flat-square" alt="Travis" />
+    </a>
+    <a href="https://github.com/RichardLitt/standard-readme)">
+      <img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt="Standard Readme" />
+    </a>
+  </div>
+</div>
+<br>
+<div align="center">
+  Built with ❤︎ by <a href="http://tiaanduplessis.co.za">Tiaan du Plessis</a>
+</div>
 
-> Parse argument options with ease
-
-This is a small parser for argument options. Nothing fancy.
-
-## Table of Contents
-
-- [Install](#install)
-- [Usage](#usage)
-- [API](#api)
-- [Contribute](#contribute)
-- [License](#license)
-
+<h2>Table of Contents</h2>
+<details>
+  <summary>Table of Contents</summary>
+  <li><a href="#install">Install</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#api">API</a></li>
+  <li><a href="#contribute">Contribute</a></li>
+  <li><a href="#license">License</a></li>
+</details>
 
 ## Install
 
@@ -64,14 +78,14 @@ All unparsed arguments will end up in the `unknown` array. The following types o
 -key value
 ```
 
-
-
 ## API
 
 ### arguments
+
 Array of arguments to parse.
 
 ### Options
+
 Currently no options available. Added for future additions.
 
 ## Contribute
@@ -82,4 +96,4 @@ Small note: If editing the README, please conform to the [standard-readme](https
 
 ## License
 
-Created with ♥ by [Tiaan](http://tiaanduplessis.co.za). Licensed under the MIT License.
+Licensed under the MIT License.
