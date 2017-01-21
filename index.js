@@ -3,7 +3,7 @@
 /**
  * Parse argument options
  */
-module.exports = function (args = [] , options = {}) {
+module.exports = function (args = [], options = {}) {
   /**
    * Recursively parse args
    *
