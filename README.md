@@ -61,8 +61,8 @@ For example, if the arguments provided are `--hello world --parse=all --no-drugs
   parse: 'all',
   drugs: false,
   'make-friends': true,
-  n: '4',
-  t: '5'
+  n: 4,
+  t: 5
 }
 
 ```
