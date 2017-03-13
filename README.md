@@ -67,6 +67,15 @@ For example, if the arguments provided are `--hello world --parse=all --no-drugs
 
 ```
 
+There is also support for parsing objects:
+
+```sh
+
+$ node example.js --headers={"Foo": "5", "bar": "6"}
+# { unknown: [], headers: { Foo: 5, bar: 6 } }
+
+```
+
 All unparsed arguments will end up in the `unknown` array. The following types of arguments are supported:
 
 ```sh
@@ -79,6 +88,12 @@ All unparsed arguments will end up in the `unknown` array. The following types o
 ```
 
 ## API
+
+This module exports a single function with the signature:
+
+```
+getThemArgs(arguments, options)
+```
 
 ### arguments
 

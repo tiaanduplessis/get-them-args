@@ -1,9 +1,44 @@
 'use strict'
 
 /**
+ * Properly parse the given array in regards to object strings
+ * e.g. [ '--headers={Foo:', '5,', 'bar:', '6}' ] -> [ '--headers={"Foo": 5, "bar": 6}' ]
+ * @param {Array} args
+ */
+function splitArgObjects (args) {
+  const newArgs = []
+  let index = 0
+
+  while(index < args.length) {
+    const arg = args[index]
+
+    if (arg.indexOf('{') !== -1) {
+      const temp = []
+
+      while (args[index].indexOf('}') === -1) {
+        temp.push(args[index])
+        index++
+      }
+      temp.push(args[index])
+
+      newArgs.push(temp.join(' ').replace(/([\w\d]+):/g, '"$1":'))
+    } else {
+      newArgs.push(arg)
+    }
+
+    index++
+  }
+
+  return newArgs
+}
+
+/**
  * Parse argument options
  */
 module.exports = function (args = [], options = {}) {
+
+  const newArgs = splitArgObjects(args)
+
   /**
    * Recursively parse args
    *
@@ -48,7 +83,7 @@ module.exports = function (args = [], options = {}) {
   }
 
 
-  const parseResult = parseArgs(args, {unknown: []})
+  const parseResult = parseArgs(newArgs, {unknown: []})
 
   // Covert to proper type
   for(let prop in parseResult) {
