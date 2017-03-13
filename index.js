@@ -47,5 +47,17 @@ module.exports = function (args = [], options = {}) {
     return parseArgs(args.slice(1), obj)
   }
 
-  return parseArgs(args, {unknown: []})
+
+  const parseResult = parseArgs(args, {unknown: []})
+
+  // Covert to proper type
+  for(let prop in parseResult) {
+    try {
+      parseResult[prop] = JSON.parse(parseResult[prop])
+    } catch (e) {
+      continue
+    }
+  }
+
+  return parseResult
 }
