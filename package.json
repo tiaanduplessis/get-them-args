@@ -1,6 +1,6 @@
 {
   "name": "get-them-args",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Parse argument options with ease",
   "license": "MIT",
   "repository": {
@@ -15,10 +15,8 @@
     "url": "tiaanduplessis.co.za"
   },
   "scripts": {
-    "lint": "standard --verbose | snazzy",
-    "lint:fix": "standard --fix --verbose | snazzy",
-    "test": "standard && mocha",
-    "watch": "chokidar '**/*' -c 'npm test'"
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "files": [
     "index.js"
@@ -30,10 +28,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chokidar-cli": "^1.2.0",
-    "mocha": "^3.2.0",
-    "snazzy": "^5.0.0",
-    "standard": "^8.6.0"
+    "jest": "^19.0.2",
+    "standard": "^9.0.1"
   }
 }
