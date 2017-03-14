@@ -21,7 +21,7 @@ function splitArgObjects (args) {
       }
       temp.push(args[index])
 
-      newArgs.push(temp.join(' ').replace(/([\w\d]+):/g, '"$1":'))
+      newArgs.push(temp.join(' ').replace(/([\w\d-]+):\s*([\w\d-]*)/g, '"$1": "$2"'))
     } else {
       newArgs.push(arg)
     }
