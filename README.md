@@ -13,7 +13,25 @@
     <a href="https://github.com/RichardLitt/standard-readme)">
       <img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt="Standard Readme" />
     </a>
+    <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs" />
+  </a>
+  <a href="https://www.paypal.me/tiaanduplessis/1">
+    <img src="https://img.shields.io/badge/$-support-green.svg?style=flat-square" alt="Donate" />
+  </a>
   </div>
+</div>
+<br>
+<div align="center">
+  <a href="https://github.com/tiaanduplessis/sep-prop/watchers">
+    <img src="https://img.shields.io/github/watchers/tiaanduplessis/sep-prop.svg?style=social" alt="Github Watch Badge" />
+  </a>
+  <a href="https://github.com/tiaanduplessis/sep-prop/stargazers">
+    <img src="https://img.shields.io/github/stars/tiaanduplessis/sep-prop.svg?style=social" alt="Github Star Badge" />
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=Check%20out%20sep-prop!%20https://github.com/tiaanduplessis/sep-prop%20%F0%9F%91%8D">
+    <img src="https://img.shields.io/twitter/url/https/github.com/tiaanduplessis/sep-prop.svg?style=social" alt="Tweet" />
+  </a>
 </div>
 <br>
 <div align="center">
@@ -45,11 +63,11 @@ To use, provide arguments as argument :smirk:.
 
 ```js
 const getThemArgs = require('get-them-arg')
-const arguments = process.argv.slice(2) // Array of arguments to process
+const args = process.argv.slice(2) // Array of arguments to process
 const options = {} // Options to be passed. CURRENTLY NONE AVAILABLE
 
 // $ node ./example.js --dir . --command foo
-console.log(getThemArgs(process.argv.slice(2)))
+console.log(getThemArgs(args))
 // Will print out: { unknown: [], dir: '.', command: 'foo' }
 ```
 
