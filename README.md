@@ -1,7 +1,7 @@
 <div align="center">
-  <img align="center" src="media/banner.png" alt="get-them-args">
+  <h1 align="center">😑 get-them-args</h1>
   <br>
-  <strong>Parse argument options with ease</strong>
+  <strong>Parse argument options</strong>
   <br>
   <div align="center">
     <a href="https://github.com/feross/standard">

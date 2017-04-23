@@ -9,7 +9,7 @@ function splitArgObjects (args) {
   const newArgs = []
   let index = 0
 
-  while(index < args.length) {
+  while (index < args.length) {
     const arg = args[index]
 
     if (arg.indexOf('{') !== -1) {
@@ -36,7 +36,6 @@ function splitArgObjects (args) {
  * Parse argument options
  */
 module.exports = function (args = [], options = {}) {
-
   const newArgs = splitArgObjects(args)
 
   /**
@@ -82,11 +81,10 @@ module.exports = function (args = [], options = {}) {
     return parseArgs(args.slice(1), obj)
   }
 
-
   const parseResult = parseArgs(newArgs, {unknown: []})
 
   // Covert to proper type
-  for(let prop in parseResult) {
+  for (let prop in parseResult) {
     try {
       parseResult[prop] = JSON.parse(parseResult[prop])
     } catch (e) {

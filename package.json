@@ -1,7 +1,7 @@
 {
   "name": "get-them-args",
   "version": "1.2.1",
-  "description": "Parse argument options with ease",
+  "description": "Parse argument options",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,6 +15,8 @@
     "url": "tiaanduplessis.co.za"
   },
   "scripts": {
+    "pretest": "npm run lint",
+    "test": "jest",
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
@@ -29,6 +31,6 @@
   "dependencies": {},
   "devDependencies": {
     "jest": "^19.0.2",
-    "standard": "^9.0.1"
+    "standard": "^10.0.1"
   }
 }
