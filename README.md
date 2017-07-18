@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">😑 get-them-args</h1>
+  <h1 align="center">Get Them Args</h1>
   <br>
   <strong>Parse argument options</strong>
   <br>
@@ -41,34 +41,42 @@
 <h2>Table of Contents</h2>
 <details>
   <summary>Table of Contents</summary>
+  <li><a href="#about">About</a></li>
   <li><a href="#install">Install</a></li>
   <li><a href="#usage">Usage</a></li>
-  <li><a href="#api">API</a></li>
   <li><a href="#contribute">Contribute</a></li>
   <li><a href="#license">License</a></li>
 </details>
+
+## About
+
+Simple CLI argument parser hacked from [minimist](https://github.com/substack/minimist) that adds support for objects and additional initialization options.
 
 ## Install
 
 ```sh
 $ npm install --save get-them-args
-```
-
-```sh
+# Or
 $ yarn add get-them-args
 ```
 
 ## Usage
-To use, provide arguments as argument :smirk:.
+To use, provide arguments as argument:
 
 ```js
-const getThemArgs = require('get-them-arg')
-const args = process.argv.slice(2) // Array of arguments to process
+const parse = require('get-them-args')
 const options = {} // Options to be passed. CURRENTLY NONE AVAILABLE
 
 // $ node ./example.js --dir . --command foo
-console.log(getThemArgs(args))
-// Will print out: { unknown: [], dir: '.', command: 'foo' }
+console.log(parse(process.argv.slice(2) ))
+// { unknown: [], dir: '.', command: 'foo' }
+
+console.log(parse(process.argv))
+// { unknown: [], dir: '.', command: 'foo' }
+
+console.log(parse())
+// { unknown: [], dir: '.', command: 'foo' }
+
 ```
 
 For example, if the arguments provided are `--hello world --parse=all --no-drugs --make-friends -n 4 -t 5`, the function will return:
@@ -104,23 +112,6 @@ All unparsed arguments will end up in the `unknown` array. The following types o
 -key=value
 -key value
 ```
-
-## API
-
-This module exports a single function with the signature:
-
-```
-getThemArgs(arguments, options)
-```
-
-### arguments
-
-Array of arguments to parse.
-
-### Options
-
-Currently no options available. Added for future additions.
-
 ## Contribute
 
 Contributions are welcome. Please open up an issue or create PR if you would like to help out.

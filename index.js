@@ -32,22 +32,21 @@ function splitArgObjects (args) {
   return newArgs
 }
 
-/**
- * Parse argument options
- */
-module.exports = function (args = [], options = {}) {
-  const newArgs = splitArgObjects(args)
+const parse = function parse (args = [], options = {}) {
+  if (!args.length) {
+    args = process.argv.slice(2)
+  }
 
-  /**
-   * Recursively parse args
-   *
-   * @param {Array} args
-   * @param {Object} obj
-   * @returns
-   */
+  if (args[0].match(/node$/)) {
+    args = args.slice(2)
+  }
+
+  const newArgs = splitArgObjects(args)
   function parseArgs (args, obj) {
     // Check if end reached
-    if (!args.length) { return obj }
+    if (!args.length) {
+      return obj
+    }
 
     const arg = args[0]
 
@@ -81,7 +80,7 @@ module.exports = function (args = [], options = {}) {
     return parseArgs(args.slice(1), obj)
   }
 
-  const parseResult = parseArgs(newArgs, {unknown: []})
+  const parseResult = parseArgs(newArgs, { unknown: [] })
 
   // Covert to proper type
   for (let prop in parseResult) {
@@ -94,3 +93,5 @@ module.exports = function (args = [], options = {}) {
 
   return parseResult
 }
+
+module.exports = parse

@@ -20,17 +20,11 @@
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "args",
-    "get-them-args",
-    "parser"
-  ],
+  "files": ["index.js"],
+  "keywords": ["args", "get-them-args", "parser"],
   "dependencies": {},
   "devDependencies": {
-    "jest": "^19.0.2",
-    "standard": "^10.0.1"
+    "jest": "^20.0.4",
+    "standard": "^10.0.2"
   }
 }

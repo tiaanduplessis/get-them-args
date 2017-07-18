@@ -1,2 +1,6 @@
 // Run $ node ./example.js {ALL ARGS HERE}
-console.log(require('./index')(process.argv.slice(2)))
+
+const parse = require('./')
+console.log(parse(process.argv.slice(2)))
+console.log(parse(process.argv))
+console.log(parse())
