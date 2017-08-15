@@ -37,7 +37,7 @@ const parse = function parse (args = [], options = {}) {
     args = process.argv.slice(2)
   }
 
-  if (args[0].match(/node$/)) {
+  if (args[0] && args[0].match(/node$/)) {
     args = args.slice(2)
   }
 
