@@ -50,6 +50,8 @@
 
 ## About
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/get-them-args.svg)](https://greenkeeper.io/)
+
 Simple CLI argument parser hacked from [minimist](https://github.com/substack/minimist) that adds support for objects and additional initialization options.
 
 ## Install
