@@ -1,56 +1,23 @@
-<div align="center">
-  <h1 align="center">Get Them Args</h1>
-  <br>
-  <strong>Parse argument options</strong>
-  <br>
-  <div align="center">
-    <a href="https://github.com/feross/standard">
-      <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square" alt="Standard" />
-    </a>
-    <a href="https://travis-ci.org/tiaanduplessis/get-them-args">
-      <img src="https://img.shields.io/travis/tiaanduplessis/get-them-args/master.svg?style=flat-square" alt="Travis" />
-    </a>
-    <a href="https://github.com/RichardLitt/standard-readme)">
-      <img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt="Standard Readme" />
-    </a>
-    <a href="http://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs" />
-  </a>
-  <a href="https://www.paypal.me/tiaanduplessis/1">
-    <img src="https://img.shields.io/badge/$-support-green.svg?style=flat-square" alt="Donate" />
-  </a>
-  </div>
-</div>
-<br>
-<div align="center">
-  <a href="https://github.com/tiaanduplessis/sep-prop/watchers">
-    <img src="https://img.shields.io/github/watchers/tiaanduplessis/sep-prop.svg?style=social" alt="Github Watch Badge" />
-  </a>
-  <a href="https://github.com/tiaanduplessis/sep-prop/stargazers">
-    <img src="https://img.shields.io/github/stars/tiaanduplessis/sep-prop.svg?style=social" alt="Github Star Badge" />
-  </a>
-  <a href="https://twitter.com/intent/tweet?text=Check%20out%20sep-prop!%20https://github.com/tiaanduplessis/sep-prop%20%F0%9F%91%8D">
-    <img src="https://img.shields.io/twitter/url/https/github.com/tiaanduplessis/sep-prop.svg?style=social" alt="Tweet" />
-  </a>
-</div>
-<br>
-<div align="center">
-  Built with ❤︎ by <a href="http://tiaanduplessis.co.za">Tiaan du Plessis</a>
-</div>
 
-<h2>Table of Contents</h2>
-<details>
-  <summary>Table of Contents</summary>
-  <li><a href="#about">About</a></li>
-  <li><a href="#install">Install</a></li>
-  <li><a href="#usage">Usage</a></li>
-  <li><a href="#contribute">Contribute</a></li>
-  <li><a href="#license">License</a></li>
-</details>
+# get-them-args
+[![package version](https://img.shields.io/npm/v/get-them-args.svg?style=flat-square)](https://npmjs.org/package/get-them-args)
+[![package downloads](https://img.shields.io/npm/dm/get-them-args.svg?style=flat-square)](https://npmjs.org/package/get-them-args)
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![package license](https://img.shields.io/npm/l/get-them-args.svg?style=flat-square)](https://npmjs.org/package/get-them-args)
+[![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/get-them-args.svg)](https://greenkeeper.io/)
+
+> Parse argument options
+
+## Table of Contents
+
+- [About](#about)
+- [Install](#install)
+- [Usage](#usage)
+- [Contribute](#contribute)
+- [License](#License)
+
 
 ## About
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/get-them-args.svg)](https://greenkeeper.io/)
 
 Simple CLI argument parser hacked from [minimist](https://github.com/substack/minimist) that adds support for objects and additional initialization options.
 
@@ -114,12 +81,15 @@ All unparsed arguments will end up in the `unknown` array. The following types o
 -key=value
 -key value
 ```
+
 ## Contribute
 
-Contributions are welcome. Please open up an issue or create PR if you would like to help out.
-
-Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+1. Fork it and create your feature branch: git checkout -b my-new-feature
+2. Commit your changes: git commit -am 'Add some feature'
+3. Push to the branch: git push origin my-new-feature 
+4. Submit a pull request
 
 ## License
 
-Licensed under the MIT License.
+MIT
+    
