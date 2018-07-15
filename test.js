@@ -1,6 +1,3 @@
-/* eslint-env jest */
-'use strict'
-
 const parse = require('./')
 
 test('should parse all the args', () => {
