@@ -25,8 +25,8 @@
     "arguments"
   ],
   "devDependencies": {
-    "jest": "^23.4.1",
-    "standard": "^12.0.0"
+    "jest": "23.4.1",
+    "standard": "12.0.1"
   },
   "standard": {
     "env": {
