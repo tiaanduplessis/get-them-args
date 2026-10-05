@@ -84,6 +84,11 @@ const parse = function parse (args = [], options = {}) {
 
   // Covert to proper type
   for (let prop in parseResult) {
+    // Keep positional arguments as strings in their array.
+    if (Array.isArray(parseResult[prop])) {
+      continue
+    }
+
     try {
       parseResult[prop] = JSON.parse(parseResult[prop])
     } catch (e) {
